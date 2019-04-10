@@ -1,5 +1,5 @@
 {
-  "name": "chat-serve",
+  "name": "music-serve",
   "version": "0.1.0",
   "description": "音乐服务中心",
   "author": "awei <274635143@qq.com>",
@@ -7,8 +7,8 @@
   "scripts": {
     "start": "./node_modules/.bin/nodemon bin/www",
     "build": "webpack",
-    "pm2": "pm2 start app/server.js --name=chat-serve",
-    "restart": "pm2 restart chat-serve",
+    "pm2": "pm2 start app/server.js --name=music-serve",
+    "restart": "pm2 restart music-serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
