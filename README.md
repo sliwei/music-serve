@@ -1,4 +1,4 @@
-# chat-serve
+# music-serve
 
 > 音乐服务中心
 
@@ -33,10 +33,10 @@ npm run build
 npm i
 
 # 启动
-npm run pm2 || pm2 start app/server.js --name=chat-serve
+npm run pm2 || pm2 start app/server.js --name=music-serve
 
 # 重启
-pm2 restart chat-serve || pm2 restart :id
+pm2 restart music-serve || pm2 restart :id
 
 ```
 
@@ -45,7 +45,7 @@ pm2 restart chat-serve || pm2 restart :id
 ```
 
 # 开发环境文件
-chat-serve
+music-serve
   app
     config              // 配置
     controllers         // 操作层
@@ -63,7 +63,7 @@ chat-serve
   webpack.config.js     // 打包配置
 
 # 线上环境文件(打包完成后，Jenkins或复制以下文件到线上运行即可)
-chat-serve
+music-serve
   app
     public              // 资源文件夹
     views               // 模板
