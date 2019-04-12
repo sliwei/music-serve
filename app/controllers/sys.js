@@ -5,7 +5,7 @@ const axios = require('axios');
  */
 const sys = async (ctx, next) => {
   let dat = ctx.request.body;
-  let userinfo = await axios.get(dat.url);
+  let userinfo = await axios.get(encodeURI(dat.url));
   ctx.DATA.data = userinfo.data;
   ctx.body = ctx.DATA;
 };
