@@ -7,5 +7,5 @@ WORKDIR /www
 
 EXPOSE 3004
 
-CMD ['yarn', 'node']
+CMD node app/server.js
 
