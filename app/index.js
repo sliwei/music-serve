@@ -1,4 +1,3 @@
-require('babel-polyfill')
 const Koa = require('koa')
 const app = new Koa()
 const views = require('koa-views')
@@ -7,9 +6,9 @@ const favicon = require('koa-favicon')
 const koaBody = require('koa-body')
 const logger = require('koa-logger')
 const cors = require('koa2-cors')
-const colors = require('colors')
+const colors = require('colors');
 const { resolve } = require('path')
-const swagger = require('swagger-injector')
+const { koaSwagger } = require('koa2-swagger-ui')
 
 const conf = require('./config')
 const index = require('./routes')
@@ -118,8 +117,11 @@ app.use(async (ctx, next) => {
 
 // swagger
 app.use(
-  swagger.koa({
-    path: resolve(__dirname, './public', 'swagger.json')
+  koaSwagger({
+    routePrefix: '/chat/swagger', // host at /swagger instead of default /docs
+    swaggerOptions: {
+      url: '/chat/api/swagger.json' // example path to json 其实就是之后swagger-jsdoc生成的文档地址
+    }
   })
 )
 

@@ -1,4 +1,4 @@
-local NAME="chat-serve";
+local NAME="music-serve";
 local SOURCE="/data/docker/awei/" + NAME+"/source/";
 
 [

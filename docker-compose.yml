@@ -1,9 +1,9 @@
 version: "3.7"
 
 services:
-  chat-serve:
-    container_name: chat-serve
-    image: chat-serve
+  music-serve:
+    container_name: music-serve
+    image: music-serve
     environment:
       - DATABASE=db
       - USERNAME=user

@@ -52,8 +52,7 @@ module.exports = (env) => {
       }),
       new CopyPlugin([
         { from: 'app/views', to: './views' },
-        { from: 'app/public', to: './public' },
-        { from: 'start.sh', to: '..' }
+        { from: 'app/public', to: './public' }
       ])
     ]
   }
