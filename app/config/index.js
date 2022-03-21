@@ -10,5 +10,5 @@ module.exports = {
     maxAge: 1000 * 3600 * 48,
     path: '/',
     httpOnly: false
-  },
-};
+  }
+}
