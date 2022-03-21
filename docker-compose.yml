@@ -4,14 +4,6 @@ services:
   music-serve:
     container_name: music-serve
     image: music-serve
-    environment:
-      - DATABASE=db
-      - USERNAME=user
-      - PASSWORD=password
-      - HOST=locashot
-      - PORT=3306
-      - GT_ID=xx
-      - GT_KEY=xx
     networks:
       - proxy
 
