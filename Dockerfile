@@ -5,7 +5,7 @@ COPY node_modules /www/node_modules
 
 WORKDIR /www
 
-EXPOSE 3004
+EXPOSE 3000
 
 CMD node app/server.js
 
